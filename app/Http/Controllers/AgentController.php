@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Agents;
 use Illuminate\Http\Request;
 
 class AgentController extends Controller
@@ -23,7 +24,7 @@ class AgentController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -34,7 +35,17 @@ class AgentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Agents::create([
+            'agent_id' => $request-> agent_id,
+            'agent_name' => $request->agent_name,
+            'agent_description' => $request->agent_description,
+            'agent_role' => $request->agent_role,
+            'agent_skill_1' => $request->agent_skill_1,
+            'agent_skill_2' => $request->agent_skill_2,
+            'agent_skill_3'=> $request->agent_skill_3,
+            'agent_skill_4'=> $request->agent_skill_4,
+            'agent_image' => $request->agent_image,
+        ]);
     }
 
     /**
@@ -45,7 +56,8 @@ class AgentController extends Controller
      */
     public function show($id)
     {
-        //
+        $agent = Agents::find($id);
+        return response()->json($agent, 200);
     }
 
     /**
@@ -68,7 +80,18 @@ class AgentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $agents = Agents::find($id);
+        $agents->update([
+            'agent_id' => $request-> agent_id,
+            'agent_name' => $request->agent_name,
+            'agent_description' => $request->agent_description,
+            'agent_role' => $request->agent_role,
+            'agent_skill_1' => $request->agent_skill_1,
+            'agent_skill_2' => $request->agent_skill_2,
+            'agent_skill_3'=> $request->agent_skill_3,
+            'agent_skill_4'=> $request->agent_skill_4,
+            'agent_image' => $request->agent_image,
+        ]);
     }
 
     /**
