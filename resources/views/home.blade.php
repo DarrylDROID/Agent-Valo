@@ -106,14 +106,18 @@
         </div>
     </section>
     <section>
-        <div class="container py-4 py-xl-5">
+        <div class="container py-4 py-xl-5 my-3">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="display-6 fw-bold pb-md-4">Features that make your team more&nbsp;<span class="underline">productive</span></h3>
+                    <h3 class="display-6 fw-bold pb-md-4">Penjelasan Tentang Agent Valo&nbsp;<span class="underline">API</span></h3>
                 </div>
                 <div class="col-md-6 pt-4">
-                    <p class="text-muted mb-4">Libero tincidunt magna, leo tempus aenean. Adipiscing vestibulum vehicula vel donec pulvinar aliquam, blandit lorem.</p>
+                    <p class="text-muted mb-4">Agent Valo menyediakan RESTful API (Application Programming Interface) yang dapat Anda pakai untuk membuat berbagai macam aplikasi yang membutuhkan data berupa valorant agent. Data valorant agent diambil langsung dari web Valorant-API untuk menjaga akurasi data. Namun, jika Anda menemukan data yang tidak valid, silakan laporkan ke tim kami.
+                        Agent Valo mudah untuk diintegrasikan karena menggunakan arsitektur REST dengan format balasan berupa JSON yang didukung oleh hampir semua bahasa pemrograman. Bayangkan Anda bisa membuat fitur menampilkan list agent valorant otomatis di website atau membuat aplikasi mobile untuk android, iOS, dan lain-lain. Sudah dapat ide untuk membuat aplikasi dengan Agent Valo? Silakan daftar akun untuk mendapatkan API Key, GRATIS!!</p>
                 </div>
+            </div>
+            <div class="col-md-6 text-center mx-auto my-3">
+                <h3 class="display-6 fw-bold pb-md-4">Mengapa Menggunakan Agent Valo&nbsp;<span class="underline">API</span></h3>
             </div>
             <div class="row gy-4 gy-md-0">
                 <div class="col-md-6 d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
@@ -125,9 +129,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">Heading</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">Mudah Digunakan</h5>
                                 </div>
-                                <p class="text-muted my-3">Auctor nisi et, habitant gravida ad lectus posuere.</p>
+                                <p class="text-muted my-3">Semua data dari API valorant agent mudah untuk diakses.</p>
                             </div>
                             <div class="col text-center text-md-start">
                                 <div class="d-flex justify-content-center align-items-center justify-content-md-start"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-sun fs-3 text-primary bg-warning">
@@ -135,9 +139,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">Heading</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">Data Lengkap</h5>
                                 </div>
-                                <p class="text-muted my-3">Auctor nisi et, habitant gravida ad lectus posuere.</p>
+                                <p class="text-muted my-3">Data dari API valorant agent lengkap.</p>
                             </div>
                             <div class="col text-center text-md-start">
                                 <div class="d-flex justify-content-center align-items-center justify-content-md-start"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-sun fs-3 text-primary bg-warning">
@@ -145,9 +149,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">Heading</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">API Gratis</h5>
                                 </div>
-                                <p class="text-muted my-3">Auctor nisi et, habitant gravida ad lectus posuere.</p>
+                                <p class="text-muted my-3">API dapat diakses secara gratis tanpa dipungut biaya sekalipun.</p>
                             </div>
                             <div class="col text-center text-md-start">
                                 <div class="d-flex justify-content-center align-items-center justify-content-md-start"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-sun fs-3 text-primary bg-warning">
@@ -155,9 +159,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">Heading</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">Siap Pakai</h5>
                                 </div>
-                                <p class="text-muted my-3">Auctor nisi et, habitant gravida ad lectus posuere.</p>
+                                <p class="text-muted my-3">API yang kami sediakan dapat langsung dipakai oleh siapapun.</p>
                             </div>
                         </div>
                     </div>
