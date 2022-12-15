@@ -19,6 +19,7 @@
                     <li class="nav-item"><a class="nav-link" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
                 </ul><a class="btn btn-primary shadow" role="button" href="signup">Sign up</a>
+                <a class="ms-2 btn btn-secondary shadow" role="button" href="login">Log in</a>
             </div>
         </div>
     </nav>

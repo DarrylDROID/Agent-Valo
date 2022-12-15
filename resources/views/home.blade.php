@@ -18,7 +18,8 @@
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="signup">Sign up</a>
+                </ul><a class="btn btn-primary shadow" role="button" href="signup">Sign up</a> 
+                <a class="ms-2 btn btn-secondary shadow" role="button" href="login">Log in</a>
             </div>
         </div>
     </nav>
@@ -28,15 +29,11 @@
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
                         <h1 class="display-4 fw-bold mb-5">Selamat Datang di Website&nbsp;<span class="underline">Agent Valorant API</span>.</h1>
-                        <p class="fs-5 text-muted mb-5">Metus quisque ultricies vehicula proin, magna nullam.</p>
-                        <form class="d-flex justify-content-center flex-wrap" method="post">
-                            <div class="shadow-lg mb-3"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
-                            <div class="shadow-lg mb-3"><button class="btn btn-primary" type="submit">Subscribe </button></div>
-                        </form>
+                        <p class="fs-5 text-muted mb-5">Lihat dokumentasi untuk cara penggunaan API.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">
-                    <div class="text-center position-relative"><img class="img-fluid" src="assets/img/illustrations/meeting.svg" style="width: 800px;"></div>
+                    <div class="text-center position-relative"><img class="img-fluid" src="assets/img/valorant/valorant.jpg" style="width: 800px;"></div>
                 </div>
             </div>
         </div>
