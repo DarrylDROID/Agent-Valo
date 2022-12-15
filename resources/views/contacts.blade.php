@@ -18,8 +18,15 @@
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
                     <li class="nav-item"><a class="nav-link active" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="signup">Sign up</a>
-                <a class="ms-2 btn btn-secondary shadow" role="button" href="login">Log in</a>
+                </ul>
+                @auth
+                <a class="btn btn-primary" href="{{ route('password') }}">Change password</a></div>
+                <a class="ms-2 btn btn-danger" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest
+                <a class="btn btn-primary shadow" role="button" href="{{ route('signup') }}">Sign up</a> 
+                <a class="ms-2 btn btn-secondary shadow" role="button" href="{{ route('login') }}">Log in</a>
+                @endguest
             </div>
         </div>
     </nav>

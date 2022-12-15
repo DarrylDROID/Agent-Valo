@@ -18,8 +18,15 @@
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
-                </ul><a class="btn btn-primary shadow" role="button" href="signup">Sign up</a> 
-                <a class="ms-2 btn btn-secondary shadow" role="button" href="login">Log in</a>
+                </ul>
+                @auth
+                <a class="btn btn-primary" href="{{ route('password') }}">Change password</a></div>
+                <a class="ms-2 btn btn-danger" href="{{ route('logout') }}">Logout</a>
+                @endauth
+                @guest
+                <a class="btn btn-primary shadow" role="button" href="{{ route('signup') }}">Sign up</a> 
+                <a class="ms-2 btn btn-secondary shadow" role="button" href="{{ route('login') }}">Log in</a>
+                @endguest
             </div>
         </div>
     </nav>
@@ -28,6 +35,9 @@
             <div class="row pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
+                        @auth
+                        <p>Welcome <b>{{ Auth::user()->name }}</b></p>
+                        @endauth
                         <h1 class="display-4 fw-bold mb-5">Selamat Datang di Website&nbsp;<span class="underline">Agent Valorant API</span>.</h1>
                         <p class="fs-5 text-muted mb-5">Lihat dokumentasi untuk cara penggunaan API.</p>
                     </div>

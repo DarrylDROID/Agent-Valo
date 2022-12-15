@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name("/");
 
 Route::get('/listagent', function () {
     return view('listagent');
@@ -29,14 +30,10 @@ Route::get('/ourteam', function () {
     return view('ourteam');
 });
 
-Route::get('/signup', function () {
-    return view('signup');
-});
-
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/forgotten-password', function () {
-    return view('forgotten-password');
-});
+Route::get('signup', [UserController::class, 'signup'])->name('signup');
+Route::post('signup', [UserController::class, 'signup_action'])->name('signup.action');
+Route::get('login', [UserController::class, 'login'])->name('login');
+Route::post('login', [UserController::class, 'login_action'])->name('login.action');
+Route::get('password', [UserController::class, 'password'])->name('password');
+Route::post('password', [UserController::class, 'password_action'])->name('password.action');
+Route::get('logout', [UserController::class, 'logout'])->name('logout');

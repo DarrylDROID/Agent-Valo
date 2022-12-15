@@ -31,10 +31,17 @@
                 <div class="col-md-6 text-center"><img class="img-fluid w-100" src="assets/img/illustrations/register.svg"></div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start">
                     <h2 class="display-6 fw-bold mb-5"><span class="underline pb-1"><strong>Sign up</strong></span></h2>
-                    <form method="post">
-                        <div class="mb-3"><input class="shadow-sm form-control" type="email" name="email" placeholder="Email"></div>
+                    @if($errors->any())
+                    @foreach($errors->all() as $err)
+                    <p class="alert alert-danger">{{ $err }}</p>
+                    @endforeach
+                    @endif
+                    <form action="{{ route('signup.action') }}" method="POST">
+                        @csrf
+                        <div class="mb-3"><input class="shadow-sm form-control" type="text" name="name" placeholder="Name" value="{{ old('name') }}"></div>
+                        <div class="mb-3"><input class="shadow-sm form-control" type="username" name="username" placeholder="Username" value="{{ old('username') }}"></div>
                         <div class="mb-3"><input class="shadow-sm form-control" type="password" name="password" placeholder="Password"></div>
-                        <div class="mb-3"><input class="shadow-sm form-control" type="password" name="password_repeat" placeholder="Repeat Password"></div>
+                        <div class="mb-3"><input class="shadow-sm form-control" type="password" name="password_confirm" placeholder="Password Confirmation"></div>
                         <div class="mb-5"><button class="btn btn-primary shadow" type="submit">Create account</button></div>
                         <p class="text-muted">Have an account? <a href="login">Log in&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-narrow-right">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

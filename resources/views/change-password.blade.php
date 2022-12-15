@@ -16,10 +16,8 @@
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Agent Valo</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
                 </ul><a class="btn btn-primary shadow" role="button" href="signup">Sign up</a>
@@ -32,11 +30,21 @@
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 text-center"><img class="img-fluid w-100" src="assets/img/illustrations/desk.svg"></div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start">
-                    <h2 class="display-6 fw-bold mb-4">Forgot your <span class="underline">password</span>?</h2>
-                    <p class="text-muted">Enter the email associated with your account and we'll send you a reset link.</p>
-                    <form method="post">
-                        <div class="mb-3"><input class="shadow form-control" type="email" name="email" placeholder="Email"></div>
-                        <div class="mb-5"><button class="btn btn-primary shadow" type="submit">Reset password</button></div>
+                    <h2 class="display-6 fw-bold mb-4">Change your <span class="underline">password</span>?</h2>
+                    @if(session('success'))
+                    <p class="alert alert-success">{{ session('success') }}</p>
+                    @endif
+                    @if($errors->any())
+                    @foreach($errors->all() as $err)
+                    <p class="alert alert-danger">{{ $err }}</p>
+                    @endforeach
+                    @endif
+                    <form action="{{ route('password.action') }}" method="POST">   
+                        @csrf                    
+                        <div class="mb-3"><input class="shadow form-control" type="password" name="old_password" placeholder="Password"></div>
+                        <div class="mb-3"><input class="shadow form-control" type="password" name="new_password" placeholder="New Password"></div>
+                        <div class="mb-3"><input class="shadow form-control" type="password" name="new_password_confirmation" placeholder="New Password Confirmation"></div>
+                        <div class="mb-5"><button class="btn btn-primary shadow" type="submit" href="{{ route('/') }}">Change password</button></div>
                     </form>
                 </div>
             </div>

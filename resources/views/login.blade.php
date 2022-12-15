@@ -31,10 +31,20 @@
                 <div class="col-md-6 text-center"><img class="img-fluid w-100" src="assets/img/illustrations/login.svg"></div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start">
                     <h2 class="display-6 fw-bold mb-5"><span class="underline pb-1"><strong>Login</strong><br></span></h2>
-                    <form method="post">
-                        <div class="mb-3"><input class="shadow form-control" type="email" name="email" placeholder="Email"></div>
+                    @if(session('success'))
+                    <p class="alert alert-success">{{ session('success') }}</p>
+                    @endif
+                    @if($errors->any())
+                    @foreach($errors->all() as $err)
+                    <p class="alert alert-danger">{{ $err }}</p>
+                    @endforeach
+                    @endif
+                    <form action="{{ route('login.action') }}" method="POST">
+                        @csrf
+                        <div class="mb-3"><input class="shadow form-control" type="username" name="username" placeholder="Username" value="{{ old('username') }}"></div>
                         <div class="mb-3"><input class="shadow form-control" type="password" name="password" placeholder="Password"></div>
-                        <div class="mb-5"><button class="btn btn-primary shadow" type="submit">Log in</button></div>
+                        <div class="mb-5"><button class="btn btn-primary shadow" type="submit">Log in</button>
+                        </div>
                         <p class="text-muted"><a href="forgotten-password">Forgot your password?</a></p>
                     </form>
                 </div>
