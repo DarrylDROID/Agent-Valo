@@ -18,6 +18,7 @@ return new class extends Migration
             $table->String('agent_name');
             $table->String('agent_description');
             $table->String('agent_role');
+            $table->String('agent_role_icon');
             $table->String('agent_skill_1');
             $table->String('agent_skill_2');
             $table->String('agent_skill_3');
