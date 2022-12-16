@@ -37,7 +37,7 @@
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
                         <h1 class="display-4 fw-bold mb-5">Our&nbsp;<span class="underline">Team</span>.</h1>
-                        <p class="fs-5 text-muted mb-5">Hello! We are from Ciputra University majoring Informatics Engineering 2020. <br> Here our team members :</p>
+                        <p class="fs-5 text-muted mb-5">Hello! We are from Ciputra University majoring Informatics Engineering 2020. <br> Here are our team members :</p>
                     </div>
                 </div>
             </div>

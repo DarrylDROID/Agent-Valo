@@ -111,6 +111,42 @@
                     <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="assets/img/illustrations/teamwork.svg"></div>
                 </div>
             </div>
+            <div class="col-md-6 text-center mx-auto my-5">
+                <h3 class="display-6 fw-bold pb-md-4">Request</h3>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Method</th>
+                        <th scope="col">URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GET</td>
+                        <td>http://127.0.0.1:8000/getagent</td>
+                    </tr>
+                    <tr>
+                        <td>GET</td>
+                        <td>http://127.0.0.1:8000/getagent/1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="col-md-6 text-center mx-auto my-5">
+                <h3 class="display-6 fw-bold pb-md-4">Response</h3>
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+            <img class="img-fluid" src="assets/img/APIdocumentation/response.jpg" style="width: 800px;">
         </div>
     </section>
     

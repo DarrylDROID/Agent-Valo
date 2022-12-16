@@ -41,87 +41,26 @@
             </div>
         </div>
     </header>
+    @foreach($agent as $key => $data)    
     <div class="container py-4 py-xl-5">
-        <div class="row gy-4 row-cols-1 row-cols-md-2">
+        <div class="row gy-4 row-cols-1 row-cols-md-1">
             <div class="col">
                 <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
+                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 350px;" src="{{$data->agent_image}}" /></div>
                     <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Jett</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Sova</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Reyna </h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Brimstone</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Break -->
-        <br>
-        <!-- Break -->
-        <div class="row gy-4 row-cols-1 row-cols-md-2">
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Jett</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Sova</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Reyna </h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column flex-lg-row">
-                    <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" /></div>
-                    <div class="py-4 py-lg-0 px-lg-4">
-                        <h4>Brimstone</h4>
-                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                        <h4>{{$data->agent_name}}</h4>
+                        <p>Role : {{$data->agent_role}}</p>
+                        <p>Skill 1 : {{$data->agent_skill_1}}</p>
+                        <p>Skill 2 : {{$data->agent_skill_2}}</p>
+                        <p>Skill 3 : {{$data->agent_skill_3}}</p>
+                        <p>Ultimate : {{$data->agent_skill_4}}</p>
+                        <p>{{$data->agent_description}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @endforeach
     <footer>
         <div class="container py-4 py-lg-5">
             <hr>

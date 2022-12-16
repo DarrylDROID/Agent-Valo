@@ -39,3 +39,10 @@ Route::controller(AgentController::class)->group(function () {
     Route::get('/getagent', 'index');
     Route::get('/getagent/{id}', 'show');
 });
+
+Route::get('listagent', function () {
+
+    $agent = DB::table('agent')->get();
+
+    return view('listagent', ['agent' => $agent]);
+});
