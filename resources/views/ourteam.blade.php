@@ -32,11 +32,13 @@
         </div>
     </nav>
     <header class="pt-5">
-        <div class="container py-4 py-xl-5">
-            <div class="row mb-4 mb-lg-5">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <h2>Our Team</h2>
-                    <p class="w-lg-50">Halo! Kami dari Universitas Ciputra jurusan IMT angkatan 2020. <br> Berikut ini merupakan list member kami :</p>
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5">
+                <div class="col-md-8 text-center text-md-start mx-auto">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-5">Our&nbsp;<span class="underline">Team</span>.</h1>
+                        <p class="fs-5 text-muted mb-5">Hello! We are from Ciputra University majoring Informatics Engineering 2020. <br> Here our team members :</p>
+                    </div>
                 </div>
             </div>
             <div class="row gy-4 row-cols-2 row-cols-md-4">
@@ -52,7 +54,7 @@
                                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
                                         </svg></div>
                                     </a>
-                                    </li>
+                                </li>
                                 <li class="list-inline-item text-center">
                                     <a href="https://www.twitter.com/darryl8863">
                                     <div class="d-flex flex-column align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
@@ -166,7 +168,6 @@
                 </div>
             </div>
         </div>
-    </header>
     <footer>
         <div class="container py-4 py-lg-5">
             <hr>
@@ -178,5 +179,4 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/startup-modern.js"></script>
 </body>
-
 </html>

@@ -34,8 +34,8 @@
             <div class="row pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5">List Agent</h1>
-                        <p class="fs-5 text-muted mb-5">Here are the list of agents that are currently available to play in the game.</p>
+                        <h1 class="display-4 fw-bold mb-5">List&nbsp;<span class="underline">Agent</span>.</h1>
+                        <p class="fs-5 text-muted mb-3">Here are the list of agents that are currently available to play in the game.</p>
                     </div>
                 </div>
             </div>

@@ -53,11 +53,11 @@
                 <div class="col-md-6">
                     <h3 class="display-6 fw-bold pb-md-4">Description About Valorant Agent&nbsp;<span class="underline">API</span></h3>
                 </div>
-                <div class="col-md-6 pt-4">
+                <div class="col-md-6 pt-2">
                     <p class="text-muted mb-4">Agent Valo provides a RESTful API (Application Programming Interface) that you can use to create various applications that require data in the form of valorant agents. Valorant agent data is taken directly from the Valorant-API web to maintain data accuracy. However, if you find invalid data, please report it to our team. Agent Valo is easy to integrate because it uses a REST architecture with a response format in the form of JSON which is supported by almost all programming languages. Imagine being able to create a feature that displays an automatic list of Valorant agents on the website or create mobile applications for Android, iOS, and others. Have you got an idea to make an application with Agent Valo? Please register an account to get an API Key, it's FREE!!</p>
                 </div>
             </div>
-            <div class="col-md-6 text-center mx-auto my-3">
+            <div class="col-md-6 text-center mx-auto my-5">
                 <h3 class="display-6 fw-bold pb-md-4">Why Use Valorant Agent&nbsp;<span class="underline">API?</span></h3>
             </div>
             <div class="row gy-4 gy-md-0">
