@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="col-md-6 text-center mx-auto my-5">
-                <h3 class="display-6 fw-bold pb-md-4">Request</h3>
+                <h3 class="display-6 fw-bold pb-md-4"><span class="underline">Request</span></h3>
             </div>
             <table class="table">
                 <thead>
@@ -133,17 +133,17 @@
                 </tbody>
             </table>
             <div class="col-md-6 text-center mx-auto my-5">
-                <h3 class="display-6 fw-bold pb-md-4">Response</h3>
+                <h3 class="display-6 fw-bold pb-md-4"><span class="underline">Response</span></h3>
             </div>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link active" aria-current="page" href="#">Response Success</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Response Failed</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Response Detail</a>
                 </li>
             </ul>
             <img class="img-fluid" src="assets/img/APIdocumentation/response.jpg" style="width: 800px;">
