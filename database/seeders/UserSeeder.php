@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
             'user_id' => 1,
             'name' => 'John Doe',
             'username' => 'John',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('John123'),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);
