@@ -16,7 +16,6 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
                 </ul>
                 @auth
@@ -38,8 +37,8 @@
                         @auth
                         <p>Welcome <b>{{ Auth::user()->name }}</b></p>
                         @endauth
-                        <h1 class="display-4 fw-bold mb-5">Selamat Datang di Website Agent Valorant&nbsp;<span class="underline">API</span>.</h1>
-                        <p class="fs-5 text-muted mb-5">Lihat dokumentasi untuk cara penggunaan API.</p>
+                        <h1 class="display-4 fw-bold mb-5">Welcome to Agent Valo Website&nbsp;<span class="underline">API</span>.</h1>
+                        <p class="fs-5 text-muted mb-5">Here is the Documentation for Valorant API.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">
@@ -52,15 +51,14 @@
         <div class="container py-4 py-xl-5 my-3">
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="display-6 fw-bold pb-md-4">Penjelasan Tentang Agent Valo&nbsp;<span class="underline">API</span></h3>
+                    <h3 class="display-6 fw-bold pb-md-4">Description About Valorant Agent&nbsp;<span class="underline">API</span></h3>
                 </div>
                 <div class="col-md-6 pt-4">
-                    <p class="text-muted mb-4">Agent Valo menyediakan RESTful API (Application Programming Interface) yang dapat Anda pakai untuk membuat berbagai macam aplikasi yang membutuhkan data berupa valorant agent. Data valorant agent diambil langsung dari web Valorant-API untuk menjaga akurasi data. Namun, jika Anda menemukan data yang tidak valid, silakan laporkan ke tim kami.
-                        Agent Valo mudah untuk diintegrasikan karena menggunakan arsitektur REST dengan format balasan berupa JSON yang didukung oleh hampir semua bahasa pemrograman. Bayangkan Anda bisa membuat fitur menampilkan list agent valorant otomatis di website atau membuat aplikasi mobile untuk android, iOS, dan lain-lain. Sudah dapat ide untuk membuat aplikasi dengan Agent Valo? Silakan daftar akun untuk mendapatkan API Key, GRATIS!!</p>
+                    <p class="text-muted mb-4">Agent Valo provides a RESTful API (Application Programming Interface) that you can use to create various applications that require data in the form of valorant agents. Valorant agent data is taken directly from the Valorant-API web to maintain data accuracy. However, if you find invalid data, please report it to our team. Agent Valo is easy to integrate because it uses a REST architecture with a response format in the form of JSON which is supported by almost all programming languages. Imagine being able to create a feature that displays an automatic list of Valorant agents on the website or create mobile applications for Android, iOS, and others. Have you got an idea to make an application with Agent Valo? Please register an account to get an API Key, it's FREE!!</p>
                 </div>
             </div>
             <div class="col-md-6 text-center mx-auto my-3">
-                <h3 class="display-6 fw-bold pb-md-4">Mengapa Menggunakan Agent Valo&nbsp;<span class="underline">API</span></h3>
+                <h3 class="display-6 fw-bold pb-md-4">Why Use Valorant Agent&nbsp;<span class="underline">API?</span></h3>
             </div>
             <div class="row gy-4 gy-md-0">
                 <div class="col-md-6 d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
@@ -72,9 +70,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">Mudah Digunakan</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">Easy to Use</h5>
                                 </div>
-                                <p class="text-muted my-3">Semua data dari API valorant agent mudah untuk diakses.</p>
+                                <p class="text-muted my-3">All the data is easily accessed.</p>
                             </div>
                             <div class="col text-center text-md-start">
                                 <div class="d-flex justify-content-center align-items-center justify-content-md-start"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-sun fs-3 text-primary bg-warning">
@@ -82,9 +80,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">Data Lengkap</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">Realtime Data</h5>
                                 </div>
-                                <p class="text-muted my-3">Data dari API valorant agent lengkap.</p>
+                                <p class="text-muted my-3">The data is updated in realtime.</p>
                             </div>
                             <div class="col text-center text-md-start">
                                 <div class="d-flex justify-content-center align-items-center justify-content-md-start"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-sun fs-3 text-primary bg-warning">
@@ -92,9 +90,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">API Gratis</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">It's Free</h5>
                                 </div>
-                                <p class="text-muted my-3">API dapat diakses secara gratis tanpa dipungut biaya sekalipun.</p>
+                                <p class="text-muted my-3">No cash needed to use this API.</p>
                             </div>
                             <div class="col text-center text-md-start">
                                 <div class="d-flex justify-content-center align-items-center justify-content-md-start"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-sun fs-3 text-primary bg-warning">
@@ -102,9 +100,9 @@
                                         <circle cx="12" cy="12" r="4"></circle>
                                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-2">Siap Pakai</h5>
+                                    <h5 class="fw-bold mb-0 ms-2">Ready to Use</h5>
                                 </div>
-                                <p class="text-muted my-3">API yang kami sediakan dapat langsung dipakai oleh siapapun.</p>
+                                <p class="text-muted my-3">API is ready to use whenever and whoever.</p>
                             </div>
                         </div>
                     </div>
@@ -118,36 +116,6 @@
     
     <footer>
         <div class="container py-4 py-lg-5">
-            <div class="row row-cols-2 row-cols-md-4">
-                <div class="col-12 col-md-3">
-                    <div class="fw-bold d-flex align-items-center mb-2"><span>Agent Valo</span></div>
-                    <p class="text-muted">Sem eleifend donec molestie, integer quisque orci aliquam.</p>
-                </div>
-                <div class="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">Services</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Web design</a></li>
-                        <li><a href="#">Development</a></li>
-                        <li><a href="#">Hosting</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">About</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Legacy</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">Careers</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Job openings</a></li>
-                        <li><a href="#">Employee success</a></li>
-                        <li><a href="#">Benefits</a></li>
-                    </ul>
-                </div>
-            </div>
             <hr>
             <div class="text-muted d-flex justify-content-between align-items-center pt-3">
                 <p class="mb-0">Copyright © 2022 Ngantok IMT</p>

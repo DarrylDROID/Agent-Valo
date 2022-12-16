@@ -23,10 +23,6 @@ Route::get('/listagent', function () {
     return view('listagent');
 });
 
-Route::get('/contacts', function () {
-    return view('contacts');
-});
-
 Route::get('/ourteam', function () {
     return view('ourteam');
 });

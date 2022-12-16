@@ -16,7 +16,6 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="listagent">List Agent</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
                 </ul>
                 @auth
@@ -30,15 +29,19 @@
             </div>
         </div>
     </nav>
-
-<body>
-    <div class="container py-4 py-xl-5">
-        <div class="row mb-5">
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2>List Agents</h2>
-                <p class="fs-5 text-muted mb-5">Here are the list of agents that are currently available to play in the game </p>
+    <header class="pt-5">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5">
+                <div class="col-md-8 text-center text-md-start mx-auto">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-5">List Agent</h1>
+                        <p class="fs-5 text-muted mb-5">Here are the list of agents that are currently available to play in the game.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </header>
+    <div class="container py-4 py-xl-5">
         <div class="row gy-4 row-cols-1 row-cols-md-2">
             <div class="col">
                 <div class="d-flex flex-column flex-lg-row">
@@ -120,5 +123,4 @@
         </div>
     </div>
 </body>
-
 </html>

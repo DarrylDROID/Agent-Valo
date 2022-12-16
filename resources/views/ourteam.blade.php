@@ -18,7 +18,6 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts">Contacts</a></li>
                     <li class="nav-item"><a class="nav-link active" href="ourteam">Our Team</a></li>
                 </ul>
                 @auth
