@@ -14,7 +14,8 @@ class AgentController extends Controller
      */
     public function index()
     {
-        //
+        $agents = Agents::all();
+        return response()->json($agents, 200);
     }
 
     /**
@@ -102,6 +103,7 @@ class AgentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $agents = Agents::find($id);
+        $agents->delete();
     }
 }
