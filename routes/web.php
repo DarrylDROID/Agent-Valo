@@ -41,5 +41,5 @@ Route::get('logout', [UserController::class, 'logout'])->name('logout');
 
 Route::controller(AgentController::class)->group(function () {
     Route::get('/getagent', 'index');
-    Route::post('/createagent', 'store');
+    Route::get('/getagent/{id}', 'show');
 });
