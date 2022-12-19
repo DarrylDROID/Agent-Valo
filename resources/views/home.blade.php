@@ -39,7 +39,6 @@
                         <p>Welcome <b>{{ Auth::user()->name }}</b></p>
                         @endauth
                         <h1 class="display-4 fw-bold mb-5">Welcome to Agent Valo Website&nbsp;<span class="underline">API</span>.</h1>
-                        <p class="fs-5 text-muted mb-5">Here is the Documentation for Valorant API.</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">
