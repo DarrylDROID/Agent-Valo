@@ -17,6 +17,7 @@
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="listagent">List Agent</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/api/documentation">Documentation</a></li>
                 </ul>
                 @auth
                 <a class="btn btn-primary" href="{{ route('password') }}">Change password</a></div>

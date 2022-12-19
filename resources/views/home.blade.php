@@ -17,6 +17,7 @@
                     <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/api/documentation">Documentation</a></li>
                 </ul>
                 @auth
                 <a class="btn btn-primary" href="{{ route('password') }}">Change password</a></div>
@@ -111,7 +112,7 @@
                     <div><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="assets/img/illustrations/teamwork.svg"></div>
                 </div>
             </div>
-            <div class="col-md-6 text-center mx-auto my-5">
+            <!-- <div class="col-md-6 text-center mx-auto my-5">
                 <h3 class="display-6 fw-bold pb-md-4"><span class="underline">Request</span></h3>
             </div>
             <table class="table">
@@ -147,7 +148,7 @@
                 </li>
             </ul>
             <img class="img-fluid" src="assets/img/APIdocumentation/response.jpg" style="width: 800px;">
-        </div>
+        </div> -->
     </section>
     
     <footer>
