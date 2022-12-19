@@ -49,7 +49,7 @@
                 <div class="d-flex flex-column flex-lg-row">
                     <div class="w-100"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 350px;" src="{{$data->agent_image}}" /></div>
                     <div class="py-4 py-lg-0 px-lg-4">
-                        <h4 class="display-5 fw-bold mb-1">{{$data->agent_name}}</h4>
+                        <h4 class="display-5 fw-bold mb-1"> <span class="underline">{{$data->agent_name}}</span></h4>
                         <p>Role : {{$data->agent_role}}<img style="filter: invert(100%); height: 20px; margin-left: 5px;" src="{{$data->agent_role_icon}}"/></p>
                         <p>Skill 1 : {{$data->agent_skill_1}}</p>
                         <p>Skill 2 : {{$data->agent_skill_2}}</p>
