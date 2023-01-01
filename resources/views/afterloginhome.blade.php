@@ -4,20 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Agent Valo</title>
+    <title>After Login Home - Agent Valo</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Agent Valo</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/afterloginhome"><span>Agent Valo</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    {{-- <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="afterloginhome">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="listagent">List Agent</a></li>
                     <li class="nav-item"><a class="nav-link" href="ourteam">Our Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/api/documentation">Documentation</a></li> --}}
+                    <li class="nav-item"><a class="nav-link" href="/api/documentation">Documentation</a></li>
                 </ul>
                 @auth
                 <a class="btn btn-primary" href="{{ route('password') }}">Change password</a></div>
@@ -35,7 +35,10 @@
             <div class="row pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5">Please Login to Access&nbsp;<span class="underline">API</span>.</h1>
+                        @auth
+                        <p>Welcome <b>{{ Auth::user()->name }}</b></p>
+                        @endauth
+                        <h1 class="display-4 fw-bold mb-5">Welcome to Agent Valo Website&nbsp;<span class="underline">API</span>.</h1>
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">

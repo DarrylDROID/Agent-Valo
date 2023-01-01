@@ -28,6 +28,10 @@ Route::get('/ourteam', function () {
     return view('ourteam');
 });
 
+Route::get('/afterloginhome', function () {
+    return view('afterloginhome');
+});
+
 Route::get('signup', [UserController::class, 'signup'])->name('signup');
 Route::post('signup', [UserController::class, 'signup_action'])->name('signup.action');
 Route::get('login', [UserController::class, 'login'])->name('login');

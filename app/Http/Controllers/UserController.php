@@ -49,7 +49,7 @@ class UserController extends Controller
         ]);
         if (Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
             $request->session()->regenerate();
-            return redirect()->intended('/');
+            return redirect()->intended('/afterloginhome');
         }
 
         return back()->withErrors([
@@ -73,7 +73,7 @@ class UserController extends Controller
         $user->password = Hash::make($request->new_password);
         $user->save();
         $request->session()->regenerate();
-        return redirect(Route('/'));
+        return redirect()->intended('/afterloginhome');
     }
 
     public function logout(Request $request)
