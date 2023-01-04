@@ -23,7 +23,7 @@
     <section class="py-4 py-md-5 mt-5">
         <div class="container py-md-5">
             <div class="row d-flex align-items-center">
-                <div class="col-md-6 text-center"><img class="img-fluid w-100" src="assets/img/illustrations/desk.svg">
+                <div class="col-md-6 text-center"><img class="img-fluid w-75" src="assets/img/illustrations/forgot-password.svg">
                 </div>
                 <div class="col-md-5 col-xl-4 text-center text-md-start">
                     <h2 class="display-6 fw-bold mb-4">Change your <span class="underline">password</span>?</h2>
