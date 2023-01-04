@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Agents;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AgentController extends Controller
@@ -20,6 +22,14 @@ class AgentController extends Controller
      *      tags={"Agent"},
      *      summary="Get list of all Agents",
      *      description="Returns list of agents",
+     *      * @OA\Parameter(
+     *      name="apikey",
+     *      in="header",
+     *      required=true,
+     *      @OA\Schema(
+     *           type="string"
+     *      )
+     * ),
      *      @OA\Response(
      *          response=200,
      *          description="Successful operation",
@@ -45,10 +55,18 @@ class AgentController extends Controller
      *   ),
      *  )
      */
-    public function index()
+    public function index(Request $request)
     {
-        $agents = Agents::all();
-        return response()->json($agents, 200);
+        $apikey = $request->header('apikey');
+        $users = User::all();
+        foreach($users as $user){
+            $key = $user->apikey;
+            if($apikey == $key){
+                $agents = Agents::all();
+                return response()->json($agents, 200);
+            }
+        }
+        return response("Invalid API Key", 405);
     }
 
     /**
@@ -94,6 +112,14 @@ class AgentController extends Controller
      *           type="integer"
      *      )
      *   ),
+     * * @OA\Parameter(
+     *      name="apikey",
+     *      in="header",
+     *      required=true,
+     *      @OA\Schema(
+     *           type="string"
+     *      )
+     * ),
      *      @OA\Response(
      *          response=200,
      *          description="Successful operation",
@@ -119,10 +145,81 @@ class AgentController extends Controller
      *   ),
      *  )
      */
-    public function show($id)
+    public function show(Request $request, $id)
+    { 
+        $apikey = $request->header('apikey');
+        $users = User::all();
+        foreach($users as $user){
+            $key = $user->apikey;
+            if($apikey == $key){
+                $agent = Agents::find($id);
+                return response()->json($agent, 200);
+            }
+        }
+        return response("Invalid API Key", 405);
+    }
+
+    /**
+     * @OA\Get(
+     *      path="/getagents/{role}",
+     *      operationId="getAgentbyRole",
+     *      tags={"Agent"},
+     *      summary="Get list of Agent by Role",
+     *      description="Returns list of agents",
+     *      @OA\Parameter(
+     *      name="role",
+     *      in="path",
+     *      required=true,
+     *      @OA\Schema(
+     *           type="string"
+     *      )
+     *   ),
+     * @OA\Parameter(
+     *      name="apikey",
+     *      in="header",
+     *      required=true,
+     *      @OA\Schema(
+     *           type="string"
+     *      )
+     * ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *          @OA\MediaType(
+     *           mediaType="application/json",
+     *      )
+     *      ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthenticated",
+     *      ),
+     *      @OA\Response(
+     *          response=403,
+     *          description="Forbidden"
+     *      ),
+     * @OA\Response(
+     *      response=400,
+     *      description="Bad Request"
+     *   ),
+     * @OA\Response(
+     *      response=404,
+     *      description="not found"
+     *   ),
+     *  )
+     */
+    public function showrole(Request $request, $role)
     {
-        $agent = Agents::find($id);
-        return response()->json($agent, 200);
+        
+        $apikey = $request->header('apikey');
+        $users = User::all();
+        foreach($users as $user){
+            $key = $user->apikey;
+            if($apikey == $key){
+                $agent = Agents::all()->where('agent_role', $role);
+                return response()->json($agent, 200);
+            }
+        }
+        return response("Invalid API Key", 405);
     }
 
     /**

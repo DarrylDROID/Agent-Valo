@@ -43,6 +43,7 @@ Route::get('logout', [UserController::class, 'logout'])->name('logout');
 Route::controller(AgentController::class)->group(function () {
     Route::get('/getagent', 'index');
     Route::get('/getagent/{id}', 'show');
+    Route::get('/getagents/{role}', 'showrole');
 });
 
 Route::get('listagent', function () {

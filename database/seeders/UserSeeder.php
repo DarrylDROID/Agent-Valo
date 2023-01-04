@@ -21,6 +21,7 @@ class UserSeeder extends Seeder
             'name' => 'John Doe',
             'username' => 'John',
             'password' => Hash::make('John123'),
+            'apikey' => '1234567890',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
         ]);

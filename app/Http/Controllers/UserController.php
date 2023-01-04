@@ -24,10 +24,13 @@ class UserController extends Controller
             'password_confirm' => 'required|same:password',
         ]);
 
+        $randomNumber = random_int(1000000000000000, 9999999999999999);
+
         $user = new User([
             'name' => $request->name,
             'username' => $request->username,
             'password' => Hash::make($request->password),
+            'apikey' => $randomNumber,
         ]);
         $user->save();
 

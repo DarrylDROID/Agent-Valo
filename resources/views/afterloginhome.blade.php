@@ -45,6 +45,9 @@
                         @endauth
                         <h1 class="display-4 fw-bold mb-5">Welcome to Agent Valo Website&nbsp;<span
                                 class="underline">API</span>.</h1>
+                        @auth
+                            <p>Apikey: <b>{{ Auth::user()->apikey }}</b></p>
+                        @endauth
                     </div>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto">
